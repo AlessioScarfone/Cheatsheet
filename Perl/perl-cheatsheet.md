@@ -284,7 +284,7 @@ for($i=0;$i<=$#ARGV;$i++){
 
 
 
-## STRUTTURE DI CONTROLLO
+## Strutture di controllo
 
 - **IF**
 
