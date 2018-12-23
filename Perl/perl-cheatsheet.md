@@ -1,8 +1,27 @@
-# Perl 
+## Table of Contents
 
+   * [Perl](#perl)
+      * [Perl Basic Note](#perl-basic-note)
+      * [Variabili](#variabili)
+      * [Operatori e assegnazioni](#operatori-e-assegnazioni)
+      * [Array](#array)
+      * [File](#file)
+      * [Argomenti da linea di comando](#argomenti-da-linea-di-comando)
+      * [Strutture di controllo](#strutture-di-controllo)
+      * [Invocazione comandi della shell](#invocazione-comandi-della-shell)
+      * [Array Associativi](#array-associativi)
+      * [Subroutine](#subroutine)
+      * [Espressioni Regolari](#espressioni-regolari)
+         * [Pattern matching](#pattern-matching)
+         * [Caratteri Speciali](#caratteri-speciali)
+         * [Sostituzioni](#sostituzioni)
+         * [Trasformazioni](#trasformazioni)
+
+
+# Perl 
 Perl è un linguaggio di programmazione/scripting interpretato.
 
-### Perl Basic Note
+## Perl Basic Note
 
 ```bash
 perl -v # verifica la versione di Perl
@@ -60,7 +79,7 @@ $ 	#variabili scalari
 
 In Perl le variabili `$_` e `@_` sono variabili globali di default
 
-### Operatori e assegnazioni
+## Operatori e assegnazioni
 
 ```perl
 + 	#somma
@@ -448,9 +467,7 @@ L'operatore di pattern matching è `=~`. Questo operatore verifica se esiste una
 Gli elementi principale di una espressione regolare sono:
 
 - Elementi (Literals) : Rappresentano una parte di testo.
-- Qauntificatori (Quantifiers): Indicano quante volte ci si aspetta che un certo elemento (o gruppo di elementi) possa essere ripetuto.
-
-
+- Quantificatori (Quantifiers): Indicano quante volte ci si aspetta che un certo elemento (o gruppo di elementi) possa essere ripetuto.
 
 ### Pattern matching
 
@@ -469,8 +486,7 @@ print "Ok" if $t=~/Ciao/;
 > **Come avviene la verifica del match ?** Viene cercata la posizione più a sinistra in cui si  riscontra l’intera espressione regolare. La stringa viene esaminata da sinistra a destra finché non viene trovato un riscontro di regexp o finché il confronto fallisce.
 
 
-
-#### CARATTERI SPECIALI
+### Caratteri Speciali
 
 **METACARATTERI**
 
@@ -512,8 +528,6 @@ $stringa =~ /([A-Z]{3})\s([A-Z]{3})\s(\d{2})\s([A-Z])\s(\d{2})\s([A-Z][0-9]{3})\
 print "CF: $1;$2;$3;$4;$5;$6;$7\n";
 ```
 
-
-
 ### Sostituzioni
 
 Perl permette di fare sostituzioni basate sulle corrispondenze individuate.
@@ -533,8 +547,6 @@ $frase = "Ciao Mondo";
 $frase =~ s/([A-Z])/:\1:/g;
 print "DOPO => $frase \n";
 ```
-
-
 
 ### Trasformazioni
 
