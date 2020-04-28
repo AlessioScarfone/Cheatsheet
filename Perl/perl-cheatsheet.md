@@ -210,7 +210,7 @@ print "@arr"
 ## File
 
 ```perl
-$file = f.txt;
+$file = "f.txt";
 #APRI UN FILE
 open(FILE,$file);
 #Il primo è l' indicatore del file (handle) che viene usato in seguito per riferirsi al file.
